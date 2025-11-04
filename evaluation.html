@@ -2,10 +2,113 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Evaluation Plan</title>
+  <style>
+    :root { --brand:#2e86de; --bg:#f4f8fc; --panel:#fff; --shadow:0 2px 5px rgba(0,0,0,0.1); }
+    body { font-family:'Segoe UI', system-ui, -apple-system, Arial, sans-serif; margin:0; background:var(--bg); color:#333; }
+    header { background:var(--brand); color:#fff; padding:1rem; }
+    header h1 { margin:0; font-size:1.6rem; }
+    nav a { color:#fff; text-decoration:none; margin-right:0.75rem; font-weight:600; }
+    main { max-width:1100px; margin:1rem auto; padding:1rem; display:grid; gap:1rem; }
+    .card { background:var(--panel); padding:1rem; border-radius:8px; box-shadow:var(--shadow); }
+    h2 { margin:0 0 0.5rem; color:#2e86de; }
+    table { width:100%; border-collapse:collapse; }
+    th, td { border:1px solid #e6e6e6; padding:0.55rem 0.6rem; text-align:left; }
+    th { background:#f6f9ff; color:#1f2a44; }
+    .btn-row { display:flex; gap:0.5rem; flex-wrap:wrap; margin-top:0.5rem; }
+    .btn { display:inline-block; padding:0.5rem 0.8rem; background:var(--brand); color:#fff; text-decoration:none; border-radius:8px; }
+    ul { padding-left:1.2rem; margin:0.25rem 0 0; }
+  </style>
 </head>
 <body>
-  <h1>Evaluation Plan</h1>
-  <p>This page will describe how success will be measured and monitored over time.</p>
-</body>
-</html>
+  <header>
+    <h1>Evaluation Plan</h1>
+    <nav>
+      <ndex.htmlHome</a>
+      costings.htmlCostings</a>
+      implementation.htmlImplementation</a>
+      <eferences.htmlReferences</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="card">
+      <h2>Design & Approach</h2>
+      <ul>
+        <li><strong>Design:</strong> Pre–post evaluation with comparison group (if feasible).</li>
+        <li><strong>Population:</strong> Parents/guardians participating in the programme (record age, gender, postcode, baseline PA).</li>
+        <li><strong>Timepoints:</strong> T0 (baseline), T1 (end of pilot), T2 (3–6 months follow-up).</li>
+        <li><strong>Consent & GDPR:</strong> Written consent, privacy notice, data retention schedule, anonymisation procedures.</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>Outcomes, KPIs & Data Sources</h2>
+      <table aria-label="Outcomes and measures">
+        <thead>
+          <tr>
+            <th>Outcome</th>
+            <th>Indicator / KPI</th>
+            <th>Measure / Source</th>
+            <th>Timepoints</th>
+            <th>Target</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Physical Activity</td>
+            <td>Minutes MVPA / week</td>
+            <td>Self-report (e.g., IPAQ-SF) or device logs</td>
+            <td>T0, T1, T2</td>
+            <td>+60 min/week vs baseline</td>
+          </tr>
+          <tr>
+            <td>Barriers</td>
+            <td>Barrier score reduction</td>
+            <td>Validated barrier scale (Likert)</td>
+            <td>T0, T1</td>
+            <td>-20% vs baseline</td>
+          </tr>
+          <tr>
+            <td>Engagement</td>
+            <td>Attendance / completion</td>
+            <td>Session registers; app analytics</td>
+            <td>T1</td>
+            <td>≥75% attendance</td>
+          </tr>
+          <tr>
+            <td>Wellbeing</td>
+            <td>WEMWBS score</td>
+            <td>Short WEMWBS (7 items)</td>
+            <td>T0, T1</td>
+            <td>+3 points</td>
+          </tr>
+          <tr>
+            <td>Sustainability</td>
+            <td>Continuation at 3–6 mo</td>
+            <td>Follow-up survey; opt-in logs</td>
+            <td>T2</td>
+            <td>≥50% continue PA</td>
+          </tr>
+        </tbody>
+      </table>
+      <p style="font-size:0.92rem;color:#555;margin-top:0.5rem;">
+        Notes: Replace examples with your chosen validated instruments; align with ethical approvals and local guidance.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>Data Collection & Analysis</h2>
+      <ul>
+        <li><strong>Instruments:</strong> Short surveys (5–10 min); optional accelerometer/subsample devices.</li>
+        <li><strong>Qualitative:</strong> 4–6 parent interviews or 1–2 focus groups on barriers, facilitators, and feasibility.</li>
+        <li><strong>Analysis:</strong> Descriptives; paired tests (pre–post); thematic analysis for qualitative data.</li>
+        <li><strong>Equity:</strong> Monitor differences by demographics and area-level deprivation.</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>Ethics, Privacy & Safeguarding</h2>
+      <ul>
+        <liAbsolutely
