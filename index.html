@@ -5,55 +5,112 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Why Parents Become Less Active</title>
   <style>
+    :root {
+      --brand: #2e86de;
+      --bg: #f4f8fc;
+      --panel: #ffffff;
+      --muted: #dff9fb;
+      --text: #1b1f24;
+      --shadow: 0 2px 6px rgba(0,0,0,0.08);
+      --radius: 10px;
+    }
+    * { box-sizing: border-box; }
     body {
-      font-family: 'Segoe UI', sans-serif;
+      font-family: 'Segoe UI', system-ui, -apple-system, Arial, sans-serif;
       margin: 0;
-      padding: 0;
-      background: #f4f8fc;
-      color: #333;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.5;
     }
     header {
-      background: #2e86de;
-      color: white;
-      padding: 2rem;
+      background: var(--brand);
+      color: #fff;
+      padding: 1.75rem 1rem 1rem;
       text-align: center;
     }
     header h1 {
       margin: 0;
-      font-size: 2.5rem;
+      font-size: 2rem;
       text-transform: uppercase;
+      letter-spacing: .3px;
     }
     header p {
-      font-size: 1.1rem;
-      margin-top: 0.5rem;
+      margin: .5rem auto 0;
+      font-size: 1rem;
+      max-width: 900px;
     }
-    .hero {
+
+    /* Accessible, solid navigation (no translucent backgrounds) */
+    nav[aria-label="Primary"] {
       display: flex;
+      gap: .6rem .8rem;
       flex-wrap: wrap;
       justify-content: center;
+      padding: .8rem 1rem 0;
+    }
+    nav[aria-label="Primary"] a {
+      color: #fff;
+      text-decoration: none;
+      background: rgba(255,255,255,0.12);
+      padding: .5rem .9rem;
+      border-radius: 999px;
+      border: 1px solid rgba(255,255,255,0.35);
+      font-weight: 700;
+      letter-spacing: .2px;
+    }
+    nav[aria-label="Primary"] a:hover,
+    nav[aria-label="Primary"] a:focus {
+      background: #1f6ec2; /* darker brand for contrast */
+      outline: none;
+    }
+    nav[aria-label="Primary"] a:visited { color: #fff; } /* keep text visible after visit */
+
+    .hero {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1rem;
+      justify-items: center;
       align-items: center;
-      padding: 2rem;
-      background: #dff9fb;
+      padding: 1.5rem 1rem 2rem;
+      background: var(--muted);
     }
+    /* Make image smaller & responsive with both width and height caps */
     .hero img {
-      max-width: 500px;
       width: 100%;
-      border-radius: 10px;
-      margin: 1rem;
+      max-width: 380px;    /* <= reduced width */
+      max-height: 240px;   /* <= reduced height */
+      height: auto;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      object-fit: cover;
     }
+    /* On larger screens, put text and image side-by-side */
+    @media (min-width: 900px) {
+      .hero {
+        grid-template-columns: 420px 1fr;
+        gap: 2rem;
+      }
+      .hero img {
+        max-width: 420px;
+        max-height: 260px;
+      }
+    }
+
     .hero-text {
-      max-width: 600px;
-      margin: 1rem;
+      max-width: 640px;
     }
     .hero-text h2 {
-      color: #2e86de;
-      margin-bottom: 0.5rem;
+      color: var(--brand);
+      margin: 0 0 .4rem;
     }
+
     .section {
-      padding: 2rem;
+      padding: 2rem 1rem;
+      max-width: 1100px;
+      margin: 0 auto;
     }
     .section h2 {
-      color: #2e86de;
+      color: var(--brand);
       margin-bottom: 1rem;
     }
     .barriers, .solutions {
@@ -62,19 +119,36 @@
       gap: 1rem;
     }
     .card {
-      background: white;
+      background: var(--panel);
       padding: 1rem;
       border-radius: 8px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      box-shadow: var(--shadow);
     }
-    ul {
-      padding-left: 1.2rem;
+    ul { padding-left: 1.2rem; }
+
+    /* High-contrast buttons with solid colors */
+    .cta-row { display: flex; flex-wrap: wrap; gap: .6rem; margin-top: .75rem; }
+    .btn {
+      display: inline-block;
+      text-decoration: none;
+      background: var(--brand);
+      color: #fff;
+      padding: .65rem 1rem;
+      border-radius: 8px;
+      font-weight: 800;           /* stronger weight for visibility */
+      letter-spacing: .2px;
+      box-shadow: var(--shadow);
     }
+    .btn:hover,
+    .btn:focus { background: #1f6ec2; outline: none; }
+    .btn:visited { color: #fff; } /* do not purple-ize visited buttons */
+
     footer {
-      background: #2e86de;
+      background: var(--brand);
       color: white;
       text-align: center;
       padding: 1rem;
+      margin-top: 1rem;
     }
   </style>
 </head>
@@ -83,13 +157,24 @@
   <header>
     <h1>Why Parents Become Less Active</h1>
     <p>Understanding the barriers and building solutions through the Social-Ecological Model</p>
+
+    <!-- Clear, accessible links; solid background; no duplicates -->
+    <nav aria-label="Primary">
+      index.htmlHome</a>
+      costings.htmlCostings</a>
+      implementation.htmlImplementation Plan</a>
+      evaluation.htmlEvaluation Plan</a>
+      references.htmlAcademic References</a>
+    </nav>
   </header>
 
   <section class="hero">
-    <img src="https://static.vecteezy.com/system/resources/previews/008/134/065/original/happy-family-exercise-in-natural-park-black-skin-family-husband-and-wife-have-fun-laughing-together-with-children-at-leisure-in-green-garden-playful-kids-have-enjoyment-outdoor-with-their-parent-photo.jpg" alt="Happy family exercising together outdoors in a park">
-    <div class="hero-text">
-      <h2>The Challenge</h2>
-      <p>Many parents struggle to stay active due to personal, social, and environmental barriers. This page explores the issue using the Social-Ecological Model and proposes practical, family-friendly solutions.</p>
+    <img src="https://static.vecteezy.com/system/resources/previews/008/134/065/original/happy-family-exercise-in-natural-park-black-skin-family-husband-and-wife-have-fun-laughing-together-with-children-at-leisure-in-green-garden-playful-kids-have-enjoyment-outdoor-with-their-parent-photo.jpg" alt="Happy family exercising together outdoors in   <p>Many parents struggle to stay active due to personal, social, and environmental barriers. This page explores the issue using the Social-Ecological Model and proposes practical, family-friendly solutions.</p>
+      <div class="cta-row" aria-label="Quick links">
+        implementation.htmlSee the Implementation Plan</a>
+        <a class=".htmlView the Evaluation Plan</a>
+        <a class="btn" href="costings>
+      </div>
     </div>
   </section>
 
@@ -124,6 +209,9 @@
       <li><strong>Crowdfunding:</strong> Launch apps and awareness campaigns.</li>
       <li><strong>University Research:</strong> Pilot and evaluate interventions.</li>
     </ul>
+    <div class="cta-row">
+      <a class.htmlGo to Costings</a>
+      <a class="btn" href="references.html   </div>
   </section>
 
   <footer>
