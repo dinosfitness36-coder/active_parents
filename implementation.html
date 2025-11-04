@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,126 +5,109 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Implementation Plan</title>
   <style>
-    :root { --brand:#2e86de; --bg:#f4f8fc; --panel:#fff; --shadow:0 2px 5px rgba(0,0,0,0.1); }
-    body { font-family:'Segoe UI', system-ui, -apple-system, Arial, sans-serif; margin:0; background:var(--bg); color:#333; }
-    header { background:var(--brand); color:#fff; padding:1rem; }
-    header h1 { margin:0; font-size:1.6rem; }
-    nav a { color:#fff; text-decoration:none; margin-right:0.75rem; font-weight:600; }
-    main { max-width:1100px; margin:1rem auto; padding:1rem; display:grid; gap:1rem; }
-    .card { background:var(--panel); padding:1rem; border-radius:8px; box-shadow:var(--shadow); }
-    h2 { margin:0 0 0.5rem; color:#2e86de; }
-    ul { padding-left:1.2rem; margin:0.25rem 0 0; }
-    .grid { display:grid; gap:1rem; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); }
-    .badge { display:inline-block; background:#edf4ff; color:#1f2a44; padding:0.25rem 0.6rem; border-radius:999px; font-size:0.85rem; font-weight:700; }
-    .btn-row { display:flex; gap:0.5rem; flex-wrap:wrap; margin-top:0.5rem; }
-    .btn { display:inline-block; padding:0.5rem 0.8rem; background:var(--brand); color:#fff; text-decoration:none; border-radius:8px; }
+    :root { --brand:#2e86de; --bg:#f4f8fc; --panel:#fff; --text:#1b1f24; --shadow:0 2px 6px rgba(0,0,0,0.08); }
+    * { box-sizing: border-box; }
+    body { font-family:'Segoe UI', system-ui, Arial, sans-serif; margin:0; background:var(--bg); color:var(--text); }
+    header { background:var(--brand); color:#fff; padding:1.25rem 1rem; text-align:center; }
+    header h1 { margin:0; font-size:1.4rem; }
+    nav { display:flex; justify-content:center; gap:.6rem .8rem; flex-wrap:wrap; padding:.7rem 1rem 0; }
+    nav a { color:#fff; text-decoration:none; background:rgba(255,255,255,0.12); border:1px solid rgba(255,255,255,0.35); border-radius:999px; padding:.45rem .85rem; font-weight:700; }
+    nav a:hover, nav a:focus { background:#1f6ec2; outline:none; }
+    nav a:visited { color:#fff; }
+    main { max-width:1100px; margin:0 auto; padding:1.25rem 1rem 2rem; }
+    .card { background:var(--panel); border-radius:8px; padding:1rem; box-shadow:var(--shadow); margin-bottom:1rem; }
+    h2, h3 { color:var(--brand); margin:.25rem 0 .75rem; }
+    .grid { display:grid; gap:1rem; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); }
+    ul { padding-left:1.1rem; }
+    .muted { color:#5b6470; }
   </style>
 </head>
 <body>
   <header>
     <h1>Implementation Plan</h1>
-    <nav>
-      <a href="lHome</a>
-      <a href="htmlCostings</a>
-      evaluation.htmlEvaluation</a>
-      <eferences.htmlReferences</a>
+    <nav aria-label="Primary">
+      index.htmlHome</a>
+      costings.htmlCostings</a>
+      evaluation.htmlEvaluation Plan</a>
+      references.htmlAcademic References</a>
     </nav>
   </header>
 
   <main>
     <section class="card">
-      <h2>Objectives</h2>
-      <ul>
-        <li>Increase weekly moderate-to-vigorous physical activity among participating parents.</li>
-        <li>Reduce perceived barriers at individual, interpersonal, organizational, and community levels.</li>
-        <li>Establish sustainable community partnerships and family-oriented activity offers.</li>
-      </ul>
+      <h2>Overview</h2>
+      <p class="muted">A phased rollout aligned to the Social-Ecological Model, enabling quick wins and sustainable change.</p>
     </section>
 
-    <section class="grid">
-      <div class="card">
-        <h2>Phase 1 <span class="badge">Months 0–3</span></h2>
-        <ul>
-          <li>Stakeholder mapping and MOUs (employers, community centres, councils).</li>
-          <li>Recruitment plan & safeguarding checks for facilitators.</li>
-          <li>Set up digital platform (sign-ups, reminders, resources).</li>
-          <li>Pilot scheduling & venue bookings.</li>
-        </ul>
-      </div>
-      <div class="card">
-        <h2>Phase 2 <span class="badge">Months 3–6</span></h2>
-        <ul>
-          <li>Run pilot: 6–8 weeks of family sessions + home workout packs.</li>
-          <li>Onboard employers to flexible-time challenges with incentives.</li>
-          <li>Weekly feedback loops; quick iterations on content & times.</li>
-        </ul>
-      </div>
-      <div class="card">
-        <h2>Phase 3 <span class="badge">Months 6–12</span></h2>
-        <ul>
-          <li>Scale to additional neighbourhoods; rotate venues for access.</li>
-          <li>Peer-led support groups; ambassador programme for parents.</li>
-          <li>Secure co-funding via sponsors/grants; integrate with local services.</li>
-        </ul>
-      </div>
-    </section>
-
-    <section class="grid">
-      <div class="card">
-        <h2>Workstreams</h2>
-        <ul>
-          <li><strong>Programme Delivery:</strong> Session design, facilitation, childcare support.</li>
-          <li><strong>Community & Employers:</strong> Partnerships, scheduling, incentives.</li>
-          <li><strong>Technology:</strong> Content library, reminders, basic progress tracking.</li>
-          <li><strong>Marketing & Outreach:</strong> Posters, social media, GP/community referrals.</li>
-          <li><strong>Safeguarding & Risk:</strong> Policies, training, incident logging.</li>
-        </ul>
-      </div>
-      <div class="card">
-        <h2>Roles & Responsibilities (RACI)</h2>
-        <ul>
-          <li><strong>Project Lead:</strong> Accountable (A) – governance, budget, risk.</li>
-          <li><strong>Coordinator:</strong> Responsible (R) – operations, calendars, stakeholders.</li>
-          <li><strong>Facilitators:</strong> Responsible (R) – session delivery & safety.</li>
-          <li><strong>Data/Evaluation:</strong> Responsible (R) – KPIs, surveys, analysis; Consulted (C) with University partners.</li>
-          <li><strong>Comms/Outreach:</strong> Responsible (R) – assets & campaigns; Informed (I) stakeholders.</li>
-        </ul>
-      </div>
-    </section>
-
-    <section class="grid">
-      <div class="card">
-        <h2>Risks & Mitigations</h2>
-        <ul>
-          <li><strong>Low attendance:</strong> Offer child-friendly times, incentives, partner referrals.</li>
-          <li><strong>Venue availability:</strong> Pre-book blocks; maintain alternates.</li>
-          <li><strong>Safeguarding incidents:</strong> Training, clear protocols, DBS checks.</li>
-          <li><strong>Budget overrun:</strong> Contingency (10%), staged procurement.</li>
-        </ul>
-      </div>
-      <div class="card">
-        <h2>Dependencies</h2>
-        <ul>
-          <li>Community centre schedules; employer policy alignment.</li>
-          <li>Equipment lead times; facilitator availability.</li>
-          <li>Data protection & consent materials (see Evaluation page).</li>
-        </ul>
+    <section>
+      <h2>Phases & Milestones</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Phase 1 — Discovery (Weeks 1–4)</h3>
+          <ul>
+            <li>Stakeholder mapping (parents, schools, employers, council, NHS partners).</li>
+            <li>Baseline survey: activity levels, barriers, preferences.</li>
+            <li>Venue scouting & safeguarding checks.</li>
+            <li>Risk assessment & data protection plan (draft).</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Phase 2 — Design (Weeks 5–8)</h3>
+          <ul>
+            <li>Co-design 30–45 min family sessions + micro-workouts.</li>
+            <li>Private digital community space/LMS.</li>
+            <li>Employer incentives (flex-time, wellness credit).</li>
+            <li>Marketing assets (posters, social, newsletter copy).</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Phase 3 — Pilot (Weeks 9–12)</h3>
+          <ul>
+            <li>3–4 pilot events (parks / community halls).</li>
+            <li>Collect feedback (attendance, NPS, brief wellbeing scale).</li>
+            <li>Refine timetable, childcare, comms cadence.</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Phase 4 — Rollout (Months 4–6)</h3>
+          <ul>
+            <li>Monthly calendar & sign-up flow.</li>
+            <li>Home workout library (video + printable routines).</li>
+            <li>Employer partnerships & recognition scheme.</li>
+            <li>Participation & engagement dashboards.</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Phase 5 — Sustain & Scale (Ongoing)</h3>
+          <ul>
+            <li>Train parent champions & volunteers.</li>
+            <li>Quarterly KPI reviews; iterate content & schedule.</li>
+            <li>Explore additional funding & sponsorships.</li>
+          </ul>
+        </div>
       </div>
     </section>
 
     <section class="card">
-      <h2>Communications Plan</h2>
+      <h2>Roles & Responsibilities</h2>
       <ul>
-        <li>Parent onboarding pack (programme overview, schedule, consent).</li>
-        <li>Weekly reminders via SMS/email; monthly progress snapshot.</li>
-        <li>Stakeholder bulletin every 6–8 weeks with KPIs and stories.</li>
+        <li><strong>Programme Lead:</strong> delivery, partnerships, risk.</li>
+        <li><strong>Instructors:</strong> session delivery, family adaptations.</li>
+        <li><strong>Comms Lead:</strong> marketing, social, parent updates.</li>
+        <li><strong>Data/Eval Lead:</strong> consent, surveys, KPI tracking.</li>
+        <li><strong>Parent Champions:</strong> peer support, local activation.</li>
       </ul>
-      <div class="btn-row">
-        <a class="btn" href="evaluation Plan</a>
-        <a class="btn" href="costings>
-        index.htmlBack to Home</a>
-      </div>
+    </section>
+
+    <section class="card">
+      <h2>Risks & Mitigations</h2>
+      <ul>
+        <li><strong>Low attendance:</strong> pre-registration, reminders, incentives, partner hosts.</li>
+        <li><strong>Weather/venue:</strong> indoor alternatives, clear cancellation policy.</li>
+        <li><strong>Safeguarding:</strong> DBS checks, code of conduct, child-first design.</li>
+        <li><strong>Data privacy:</strong> minimisation, opt-in consent, secure storage.</li>
+      </ul>
     </section>
   </main>
 </body>
-
+</html>
