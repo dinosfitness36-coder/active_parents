@@ -1,27 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Evaluation | Active Parents Project</title>
-<style> ...same styles... </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Evaluation | Active Parents Project</title>
+  <style>
+    body { font-family: 'Segoe UI', sans-serif; margin: 0; background: #f4f8fc; color: #333; }
+    nav { position: sticky; top: 0; background: #2e86de; padding: 1rem; text-align: center; box-shadow: 0 2px 5px rgba(0,0,0,0.1); z-index: 1000; }
+    nav a { color: white; text-decoration: none; margin: 0 1rem; font-weight: bold; padding: 0.5rem 1rem; border-radius: 5px; transition: background 0.3s; }
+    nav a:hover { background-color: #1b4f72; }
+    header { background: linear-gradient(to right, #2e86de, #58b19f); color: white; padding: 3rem 1rem; text-align: center; }
+    header h1 { margin: 0; font-size: 2.5rem; text-transform: uppercase; }
+    header p { font-size: 1.2rem; margin-top: 0.5rem; }
+    main { padding: 2rem; max-width: 1000px; margin: auto; }
+    h2 { color: #2e86de; margin-bottom: 1rem; }
+    .card-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; }
+    .card { background: white; padding: 1rem; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); transition: transform 0.3s; }
+    .card:hover { transform: translateY(-5px); }
+    footer { background: #2e86de; color: white; text-align: center; padding: 1rem; margin-top: 3rem; }
+  </style>
 </head>
 <body>
 
-<h1>Evaluation</h1>
+  <nav>
+    <a href="planmap.html">Plan</a>
+    <a href="implementation.html">Implementation</a>
+    <a href="evaluation.html">Evaluation</a>
+    <a href="costings.html">Costings</a>
+    <a href="reference.html">References</a>
+  </nav>
 
-<nav> ...same nav... </nav>
+  <header>
+    <h1>Evaluation</h1>
+    <p>Tracking progress and refining strategies for long-term impact</p>
+  </header>
 
-<div class="section">
-<h2>Impact Assessment</h2>
-<p>We will evaluate the programme using both quantitative and qualitative methods.</p>
-<ul>
-<li>📈 Attendance tracking at events</li>
-<li>📊 Website analytics and app usage</li>
-<li>🗣 Parent feedback surveys</li>
-<li>🏃‍♀️ Self-reported activity improvements</li>
-<li>📅 Quarterly reports and stakeholder reviews</li>
-</ul>
-</div>
+  <main>
+    <h2>📈 Monitoring & Feedback</h2>
+    <div class="card-grid">
+      <div class="card"><strong>Participation:</strong> Weekly check-ins and attendance logs.</div>
+      <div class="card"><strong>Surveys:</strong> Parent feedback on motivation and barriers.</div>
+      <div class="card"><strong>Health Metrics:</strong> Optional BMI and step count tracking.</div>
+      <div class="card"><strong>Adjustments:</strong> Modify activities based on engagement levels.</div>
+    </div>
+  </main>
+
+  <footer>
+    <p>Created by Dino’s Fitness PT Studio | Empowering Families to Stay Active</p>
+  </footer>
 
 </body>
 </html>
