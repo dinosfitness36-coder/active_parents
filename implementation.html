@@ -5,19 +5,68 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Implementation | Active Parents Project</title>
   <style>
-    body { font-family: 'Segoe UI', sans-serif; margin: 0; background: #f4f8fc; color: #333; }
-    nav { position: sticky; top: 0; background: #2e86de; padding: 1rem; text-align: center; box-shadow: 0 2px 5px rgba(0,0,0,0.1); z-index: 1000; }
-    nav a { color: white; text-decoration: none; margin: 0 1rem; font-weight: bold; padding: 0.5rem 1rem; border-radius: 5px; transition: background 0.3s; }
-    nav a:hover { background-color: #1b4f72; }
-    header { background: linear-gradient(to right, #2e86de, #58b19f); color: white; padding: 3rem 1rem; text-align: center; }
-    header h1 { margin: 0; font-size: 2.5rem; text-transform: uppercase; }
-    header p { font-size: 1.2rem; margin-top: 0.5rem; }
-    main { padding: 2rem; max-width: 1000px; margin: auto; }
-    h2 { color: #2e86de; margin-bottom: 1rem; }
-    .card-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; }
-    .card { background: white; padding: 1rem; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); transition: transform 0.3s; }
-    .card:hover { transform: translateY(-5px); }
-    footer { background: #2e86de; color: white; text-align: center; padding: 1rem; margin-top: 3rem; }
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f4f8fc;
+      color: #333;
+    }
+    nav {
+      background: #dff9fb;
+      text-align: center;
+      padding: 1rem;
+    }
+    nav a {
+      margin: 0 1rem;
+      text-decoration: none;
+      background: #2e86de;
+      color: white;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+    }
+    header {
+      background: #2e86de;
+      color: white;
+      padding: 2rem;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+      text-transform: uppercase;
+    }
+    header p {
+      font-size: 1.1rem;
+      margin-top: 0.5rem;
+    }
+    .section {
+      padding: 2rem;
+    }
+    .section h2 {
+      color: #2e86de;
+      margin-bottom: 1rem;
+    }
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1rem;
+    }
+    .card {
+      background: white;
+      padding: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    ul {
+      padding-left: 1.2rem;
+    }
+    footer {
+      background: #2e86de;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+    }
   </style>
 </head>
 <body>
@@ -32,18 +81,36 @@
 
   <header>
     <h1>Implementation</h1>
-    <p>Delivering inclusive and practical solutions for active families</p>
+    <p>Delivering inclusive, multi-level solutions for inactive parents</p>
   </header>
 
-  <main>
-    <h2>🚀 Action Steps</h2>
+  <section class="section">
+    <h2>🚀 Phased Delivery Plan</h2>
     <div class="card-grid">
-      <div class="card"><strong>Digital Workouts:</strong> Launch weekly routines for parents and kids.</div>
-      <div class="card"><strong>Community Events:</strong> Host monthly park-based fitness days.</div>
-      <div class="card"><strong>Employer Collaboration:</strong> Promote flexible hours and wellness perks.</div>
-      <div class="card"><strong>Online Support:</strong> Create motivational WhatsApp and Facebook groups.</div>
+      <div class="card"><strong>Phase 1 (Jan–Feb):</strong> Awareness campaign via schools, GP surgeries, and social media. Builds visibility and trust.</div>
+      <div class="card"><strong>Phase 2 (Mar–Jun):</strong> Weekly workshops and digital workouts. Focus on habit formation and family engagement.</div>
+      <div class="card"><strong>Phase 3 (Jul–Oct):</strong> Peer-led support groups and community fitness events. Builds social capital and sustainability.</div>
+      <div class="card"><strong>Phase 4 (Nov–Dec):</strong> Feedback collection, evaluation, and refinement. Ensures responsiveness and continuous improvement.</div>
     </div>
-  </main>
+  </section>
+
+  <section class="section">
+    <h2>👥 Target Group, Settings & Partners</h2>
+    <div class="card-grid">
+      <div class="card"><strong>Target Group:</strong> Parents aged 25–45, especially those facing time poverty, low motivation, or childcare barriers.</div>
+      <div class="card"><strong>Settings:</strong> Community centres, primary schools, parks, and online platforms (Zoom, WhatsApp).</div>
+      <div class="card"><strong>Delivery Partners:</strong> Local authorities, Sport England, Active Black Country, NHS prevention teams, school safeguarding leads.</div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>🔐 Safeguarding, Inclusion & Risk Mitigation</h2>
+    <div class="card-grid">
+      <div class="card"><strong>Safeguarding:</strong> All facilitators DBS-checked. Child protection protocols aligned with NSPCC guidance. Consent forms for family sessions.</div>
+      <div class="card"><strong>Inclusion:</strong> Translated materials (Arabic, Urdu, Polish), disability-friendly venues, flexible scheduling for shift workers and single parents.</div>
+      <div class="card"><strong>Risks & Mitigation:</strong> Low engagement (use incentives and reminders), weather disruption (indoor backup), digital exclusion (loaned devices and printed guides).</div>
+    </div>
+  </section>
 
   <footer>
     <p>Created by Dino’s Fitness PT Studio | Empowering Families to Stay Active</p>
