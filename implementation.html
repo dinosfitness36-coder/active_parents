@@ -1,113 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Implementation Plan</title>
+  <meta charset="UTF-8">
+  <title>Active Parents Project</title>
   <style>
-    :root { --brand:#2e86de; --bg:#f4f8fc; --panel:#fff; --text:#1b1f24; --shadow:0 2px 6px rgba(0,0,0,0.08); }
-    * { box-sizing: border-box; }
-    body { font-family:'Segoe UI', system-ui, Arial, sans-serif; margin:0; background:var(--bg); color:var(--text); }
-    header { background:var(--brand); color:#fff; padding:1.25rem 1rem; text-align:center; }
-    header h1 { margin:0; font-size:1.4rem; }
-    nav { display:flex; justify-content:center; gap:.6rem .8rem; flex-wrap:wrap; padding:.7rem 1rem 0; }
-    nav a { color:#fff; text-decoration:none; background:rgba(255,255,255,0.12); border:1px solid rgba(255,255,255,0.35); border-radius:999px; padding:.45rem .85rem; font-weight:700; }
-    nav a:hover, nav a:focus { background:#1f6ec2; outline:none; }
-    nav a:visited { color:#fff; }
-    main { max-width:1100px; margin:0 auto; padding:1.25rem 1rem 2rem; }
-    .card { background:var(--panel); border-radius:8px; padding:1rem; box-shadow:var(--shadow); margin-bottom:1rem; }
-    h2, h3 { color:var(--brand); margin:.25rem 0 .75rem; }
-    .grid { display:grid; gap:1rem; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); }
-    ul { padding-left:1.1rem; }
-    .muted { color:#5b6470; }
+    body {
+      font-family: Arial, sans-serif;
+      margin: 40px;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+    h1, h2 {
+      color: #005a9c;
+    }
+    nav {
+      background-color: #e0e0e0;
+      padding: 10px;
+      margin-bottom: 30px;
+    }
+    nav a {
+      margin-right: 20px;
+      text-decoration: none;
+      color: #005a9c;
+      font-weight: bold;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 30px;
+    }
+    th, td {
+      border: 1px solid #ccc;
+      padding: 10px;
+      text-align: left;
+    }
+    th {
+      background-color: #e0e0e0;
+    }
+    .section {
+      margin-bottom: 50px;
+    }
   </style>
 </head>
 <body>
-  <header>
-    <h1>Implementation Plan</h1>
-    <nav aria-label="Primary">
-      index.htmlHome</a>
-      costings.htmlCostings</a>
-      evaluation.htmlEvaluation Plan</a>
-      references.htmlAcademic References</a>
-    </nav>
-  </header>
 
-  <main>
-    <section class="card">
-      <h2>Overview</h2>
-      <p class="muted">A phased rollout aligned to the Social-Ecological Model, enabling quick wins and sustainable change.</p>
-    </section>
+  <h1>Active Parents Initiative</h1>
 
-    <section>
-      <h2>Phases & Milestones</h2>
-      <div class="grid">
-        <div class="card">
-          <h3>Phase 1 — Discovery (Weeks 1–4)</h3>
-          <ul>
-            <li>Stakeholder mapping (parents, schools, employers, council, NHS partners).</li>
-            <li>Baseline survey: activity levels, barriers, preferences.</li>
-            <li>Venue scouting & safeguarding checks.</li>
-            <li>Risk assessment & data protection plan (draft).</li>
-          </ul>
-        </div>
-        <div class="card">
-          <h3>Phase 2 — Design (Weeks 5–8)</h3>
-          <ul>
-            <li>Co-design 30–45 min family sessions + micro-workouts.</li>
-            <li>Private digital community space/LMS.</li>
-            <li>Employer incentives (flex-time, wellness credit).</li>
-            <li>Marketing assets (posters, social, newsletter copy).</li>
-          </ul>
-        </div>
-        <div class="card">
-          <h3>Phase 3 — Pilot (Weeks 9–12)</h3>
-          <ul>
-            <li>3–4 pilot events (parks / community halls).</li>
-            <li>Collect feedback (attendance, NPS, brief wellbeing scale).</li>
-            <li>Refine timetable, childcare, comms cadence.</li>
-          </ul>
-        </div>
-        <div class="card">
-          <h3>Phase 4 — Rollout (Months 4–6)</h3>
-          <ul>
-            <li>Monthly calendar & sign-up flow.</li>
-            <li>Home workout library (video + printable routines).</li>
-            <li>Employer partnerships & recognition scheme.</li>
-            <li>Participation & engagement dashboards.</li>
-          </ul>
-        </div>
-        <div class="card">
-          <h3>Phase 5 — Sustain & Scale (Ongoing)</h3>
-          <ul>
-            <li>Train parent champions & volunteers.</li>
-            <li>Quarterly KPI reviews; iterate content & schedule.</li>
-            <li>Explore additional funding & sponsorships.</li>
-          </ul>
-        </div>
-      </div>
-    </section>
+  <!-- 🔗 Navigation Menu -->
+  <nav>
+    <a href="#plan-map">Plan Map</a>
+    <a href="#implementation">Implementation</a>
+    <a href="#budget">Cost</a>
+    <a href="#evaluation">Evaluation</a>
+    <a href="#references">References</a>
+  </nav>
 
-    <section class="card">
-      <h2>Roles & Responsibilities</h2>
-      <ul>
-        <li><strong>Programme Lead:</strong> delivery, partnerships, risk.</li>
-        <li><strong>Instructors:</strong> session delivery, family adaptations.</li>
-        <li><strong>Comms Lead:</strong> marketing, social, parent updates.</li>
-        <li><strong>Data/Eval Lead:</strong> consent, surveys, KPI tracking.</li>
-        <li><strong>Parent Champions:</strong> peer support, local activation.</li>
-      </ul>
-    </section>
+  <!-- 📍 Plan Map Section -->
+  <div class="section" id="plan-map">
+    <h2>Plan Map</h2>
+    <p>This section outlines the strategic roadmap for engaging parents in physical activity. It includes key milestones, delivery methods, and stakeholder roles.</p>
+    <ul>
+      <li>🗓 Timeline: Jan–Dec</li>
+      <li>📍 Locations: Community centres, schools, online platforms</li>
+      <li>👥 Stakeholders: Trainers, local councils, parent groups</li>
+    </ul>
+  </div>
 
-    <section class="card">
-      <h2>Risks & Mitigations</h2>
-      <ul>
-        <li><strong>Low attendance:</strong> pre-registration, reminders, incentives, partner hosts.</li>
-        <li><strong>Weather/venue:</strong> indoor alternatives, clear cancellation policy.</li>
-        <li><strong>Safeguarding:</strong> DBS checks, code of conduct, child-first design.</li>
-        <li><strong>Data privacy:</strong> minimisation, opt-in consent, secure storage.</li>
-      </ul>
-    </section>
-  </main>
+  <!-- 🛠 Implementation Section -->
+  <div class="section" id="implementation">
+    <h2>Implementation Plan</h2>
+    <p>This initiative aims to empower parents to become more physically active through community workshops, online resources, and personalised coaching.</p>
+    <ul>
+      <li><strong>Phase 1:</strong> Launch awareness campaign (Jan–Feb)</li>
+      <li><strong>Phase 2:</strong> Deliver workshops and online content (Mar–Jun)</li>
+      <li><strong>Phase 3:</strong> Provide ongoing support and coaching (Jul–Dec)</li>
+    </ul>
+  </div>
+
+  <!-- 💷 Budgeting Section -->
+  <div class="section" id="budget">
+    <h2>Cost Plan</h2>
+    <table>
+      <tr>
+        <th>Category</th>
+        <th>Planned (£)</th>
+        <th>Actual (£)</th>
+      </tr>
+      <tr>
+        <td>Venue Hire</td>
+        <td>600</td>
+        <td>580</td>
+      </tr>
+      <tr>
+        <td>Marketing Materials</td>
+        <td>300</td>
+        <td>310</td>
+      </tr>
+      <tr>
+        <td>Trainer Fees</td>
+        <td>1,200</td>
+        <td>1,200</td>
+      </tr>
+      <tr>
+        <td>Digital Resources</td>
+        <td>400</td>
+        <td>390</td>
+      </tr>
+      <tr>
+        <td>Miscellaneous</td>
+        <td>200</td>
+        <td>220</td>
+      </tr>
+    </table>
+  </div>
+
+  <!-- 📊 Evaluation Section -->
+  <div class="section" id="evaluation">
+    <h2>Monitoring and Evaluation</h2>
+    <p>We will track progress using the following metrics:</p>
+    <ul>
+      <li>📈 Number of parents attending workshops</li>
+      <li>📊 Website engagement and resource downloads</li>
+      <li>🗣 Feedback surveys and testimonials</li>
+      <li>🏃‍♀️ Increase in physical activity levels (self-reported)</li>
+    </ul>
+    <p>Evaluation reports will be published quarterly to assess impact and guide improvements.</p>
+  </div>
+
+  <!-- 📚 References Section -->
+  <div class="section" id="references">
+    <h2>References</h2>
+    <ul>
+      <li>Public Health England (2023). *Physical Activity Guidelines for Adults*</li>
+      <li>Sport England (2022). *Active Lives Survey: Children and Young People*</li>
+      <li>World Health Organization (2020). *Global Action Plan on Physical Activity*</li>
+    </ul>
+  </div>
+
 </body>
 </html>
